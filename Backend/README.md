@@ -1,1 +1,1 @@
-# SmartSenses
+# Backend - Django
