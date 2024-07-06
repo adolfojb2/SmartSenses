@@ -7,5 +7,4 @@ class users(models.Model):
     email = models.CharField(max_length=100, unique=True)
     password = models.CharField(max_length=128)
     phonenumber = models.CharField(max_length=15)
-    photo = models.CharField(max_length=150, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
