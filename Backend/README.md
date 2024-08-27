@@ -30,7 +30,7 @@ Para iniciar la aplicación, ejecuta:
 
 ## API
 Puedes acceder a la API del proyecto en el siguiente enlace:
-[API del Proyecto](http://127.0.0.1:8000/users/api/v1/users/)
+```http://127.0.0.1:8000/users/api/v1/users/```
 
 Y a la documentación de la API en el siguiente enlace:
-[API del Proyecto](http://127.0.0.1:8000/users/docs/)
+```http://127.0.0.1:8000/users/docs/```
