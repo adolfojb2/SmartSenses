@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'smartsenses', #nombre de la BD
         'USER': 'postgres',
-        'PASSWORD': 'ajb230',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
