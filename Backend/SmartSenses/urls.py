@@ -15,8 +15,27 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.documentation import include_docs_urls
+from rest_framework import routers
+from cuentas import views as users_views
+from dispositivos import views as devices_views
+
+
+# Routers para cada aplicación
+users_router = routers.DefaultRouter() 
+users_router.register(r'', users_views.UserView, basename='users')
+
+devices_router = routers.DefaultRouter() 
+devices_router.register(r'', devices_views.DeviceView, basename='devices')
+
+
 
 urlpatterns = [
+    # Enrutado de API para cada aplicación
     path('admin/', admin.site.urls),
-    path('users/', include('cuentas.urls'))
+    path('api/v1/users/', include(users_router.urls)),
+    path('api/v1/devices/', include(devices_router.urls)),
+
+    # Documentación global para la API
+    path("api/v1/docs/", include_docs_urls(title="API Documentation")),
 ]
