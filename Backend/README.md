@@ -32,6 +32,8 @@ Para iniciar la aplicación, ejecuta:
 Puedes acceder a la API del proyecto con los siguientes enlaces:
 ```http://127.0.0.1:8000/api/v1/users/```
 ```http://127.0.0.1:8000/api/v1/devices/```
+```http://127.0.0.1:8000/api/v1/readings/```
+```http://127.0.0.1:8000/api/v1/alerts/```
 
 Y a la documentación de la API en el siguiente enlace:
 ```http://127.0.0.1:8000/api/v1/docs/```
