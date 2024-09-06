@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'coreapi',
     'cuentas',
     'dispositivos',
+    'lecturas',
+    'alertas',
 ]
 
 MIDDLEWARE = [
